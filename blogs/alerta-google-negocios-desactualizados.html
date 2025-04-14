@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta Google: Negocios Desactualizados Serán Eliminados</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            font-family: "Poppins", sans-serif;
+        }
+
+        :root {
+            --bg-color: #1f242d;
+            --second-bg-color: #323946;
+            --main-color: #05a3ce;
+            --white-color: #fff;
+            --disabled-color: #fff3;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--white-color);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            color: var(--main-color);
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .header-img {
+            width: 100%;
+            height: auto;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .two-columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .two-columns > div {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .two-columns img {
+            width: 55%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .warning-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+        .warning-item .emoji {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            margin-top: 0.2rem;
+        }
+
+        .solution-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+        .solution-item .emoji {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            margin-top: 0.2rem;
+        }
+
+        .floating-btn {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: white;
+            color: #1f242d;
+            padding: 12px 20px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            animation: pulse 2s infinite;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            max-width: calc(100% - 60px);
+            width: auto;
+            border: 2px solid var(--main-color);
+            display: none; /* Oculto inicialmente */
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .floating-btn img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+        }
+
+        .back-to-blogs {
+            display: inline-flex;
+            align-items: center;
+            color: var(--main-color);
+            font-size: 1.1rem;
+            margin-top: 3rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-blogs:hover {
+            color: var(--white-color);
+            transform: translateX(-5px);
+        }
+
+        .back-to-blogs::before {
+            content: "←";
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(5, 163, 206, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(5, 163, 206, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(5, 163, 206, 0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .two-columns {
+                flex-direction: column;
+            }
+            
+            .two-columns.reverse {
+                flex-direction: column-reverse;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.7rem;
+            }
+            
+            .floating-btn {
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 20px;
+                padding: 8px 12px;
+                font-size: 0.85rem;
+                max-width: 90%;
+                white-space: normal;
+                text-align: center;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .floating-btn img {
+                width: 28px;
+                height: 28px;
+                margin-right: 8px;
+                margin-bottom: 0;
+            }
+            
+            .floating-btn span {
+                display: inline-block;
+                max-width: calc(100% - 40px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>🚨 URGENTE: Google comenzará a ELIMINAR negocios con perfiles desactualizados en Colombia - ¿Está el tuyo en riesgo?</h1>
+        
+        <p><strong>Bogotá, 14 de Abril del 2025</strong> - En un movimiento que ha tomado por sorpresa a la comunidad empresarial, Google ha anunciado que <strong>a partir del próximo mes comenzará a remover activamente los perfiles de negocios que no cumplan con los nuevos requisitos de actualización</strong>. Esta medida afectará directamente a miles de establecimientos en Colombia que dependen de la visibilidad en Google para atraer clientes.</p>
+        
+        <img src="../images/banner_blog.png" alt="Google Maps eliminando negocios" class="header-img">
+        
+        <h2>Lo que Google está exigiendo (y que podría hacer desaparecer tu negocio online)</h2>
+        
+        <p>Fuentes internas revelan que los algoritmos de Google ahora <strong>escanean automáticamente</strong> los perfiles de negocios buscando estas fallas críticas:</p>
+        
+        <div class="two-columns">
+            <div>
+                <div class="warning-item">
+                    <span class="emoji">🔴</span>
+                    <div>
+                        <strong>Información incompleta o contradictoria</strong>
+                        <p>(horarios que no coinciden, direcciones mal verificadas)</p>
+                    </div>
+                </div>
+                
+                <div class="warning-item">
+                    <span class="emoji">🔴</span>
+                    <div>
+                        <strong>Falta de interacción con clientes</strong>
+                        <p>(reseñas sin responder, mensajes ignorados por más de 48 horas)</p>
+                    </div>
+                </div>
+                
+                <div class="warning-item">
+                    <span class="emoji">🔴</span>
+                    <div>
+                        <strong>Perfiles abandonados</strong>
+                        <p>(sin actualizaciones en los últimos 3 meses, fotos desactualizadas)</p>
+                    </div>
+                </div>
+                
+                <div class="warning-item">
+                    <span class="emoji">🔴</span>
+                    <div>
+                        <strong>Baja actividad</strong>
+                        <p>(menos de 2 publicaciones mensuales en el perfil)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <img src="../images/parte1.png" style="display: block; margin: 0 auto;">
+            </div>
+        </div>
+        
+        <p>"Los negocios que no cumplan con estos estándares básicos serán gradualmente eliminados de los resultados de búsqueda y Google Maps", advirtió un portavoz no oficial familiarizado con los cambios.</p>
+        
+        <h2>Casos reales que anticipan lo que viene</h2>
+        
+        <p>En pruebas recientes del algoritmo:</p>
+        <ul>
+            <li>Una ferretería en Barranquilla <strong>perdió el 90% de su visibilidad</strong> por tener horarios incorrectos</li>
+            <li>Un restaurante en Cali <strong>desapareció completamente de las búsquedas</strong> tras 60 días sin responder reseñas</li>
+            <li>Varias clínicas dentales en Medellín <strong>fueron relegadas a la página 5</strong> por falta de fotos actualizadas</li>
+        </ul>
+        
+        <h2>¿Cómo proteger tu negocio?</h2>
+        
+        <p>Google está dando un plazo de <strong>30 días</strong> para que los negocios corrijan estos problemas antes de aplicar las sanciones completas. Los expertos recomiendan acciones inmediatas:</p>
+        
+        <div class="two-columns reverse">
+            <div>
+                <img src="../images/parte2.png" style="display: block; margin: 0 auto;">
+            </div>
+            
+            <div>
+                <div class="solution-item">
+                    <span class="emoji">✅</span>
+                    <div>
+                        <strong>Verificar que toda la información básica sea 100% precisa</strong>
+                    </div>
+                </div>
+                
+                <div class="solution-item">
+                    <span class="emoji">✅</span>
+                    <div>
+                        <strong>Responder profesionalmente a TODAS las reseñas (positivas y negativas)</strong>
+                    </div>
+                </div>
+                
+                <div class="solution-item">
+                    <span class="emoji">✅</span>
+                    <div>
+                        <strong>Publicar contenido nuevo al menos 2 veces por semana (fotos, promociones, actualizaciones)</strong>
+                    </div>
+                </div>
+                
+                <div class="solution-item">
+                    <span class="emoji">✅</span>
+                    <div>
+                        <strong>Habilitar y monitorear constantemente el chat de Google Messages</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <p>"Esto no es una simple advertencia - es un cambio radical en cómo Google trata a los negocios locales", explica Carlos Méndez, consultor SEO con 12 años de experiencia en el mercado colombiano. "Los que no actúen ahora, simplemente dejarán de existir en los resultados de búsqueda".</p>
+        
+        <h2>⚠️ Conclusión</h2>
+        
+        <p>Esto va más allá del típico cambio de algoritmo. <strong>Google está limpiando activamente su directorio de negocios</strong> y los establecimientos que no demuestren actividad genuina y información confiable pagarán el precio más alto: la invisibilidad digital.</p>
+        
+        <p><strong>¿Tu perfil de Google My Business está realmente protegido?</strong> El reloj está corriendo...</p>
+
+        <!-- Botón "Volver a los blogs" añadido aquí -->
+        <a href="../" class="back-to-blogs">Volver a los blogs</a>
+    </article>
+
+    <a href="https://wa.link/g2jtf9" class="floating-btn">
+        <img src="../images/miniatura.png" alt="Icono Google Maps">
+        <span>¡Salva tu negocio! Te posicionamos en Google HOY</span>
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Esperar 7 segundos antes de mostrar el botón
+            setTimeout(function() {
+                var floatingBtn = document.querySelector('.floating-btn');
+                if(floatingBtn) {
+                    floatingBtn.style.display = 'flex';
+                }
+            }, 7000); // 7000 milisegundos = 7 segundos
+        });
+    </script>
+</body>
+</html>
