@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="../images/home.png">
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '465217403345219');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=465217403345219&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-39R85DJB88"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-39R85DJB88');
+    </script>
+
+    <title>Negocios locales pierden ventas por no estar en Google</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            font-family: "Poppins", sans-serif;
+        }
+
+        :root {
+            --bg-color: #1f242d;
+            --second-bg-color: #323946;
+            --main-color: #05a3ce;
+            --white-color: #fff;
+            --disabled-color: #fff3;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--white-color);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            color: var(--main-color);
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .header-img {
+            width: 100%;
+            height: auto;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .two-columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .two-columns > div {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .two-columns img {
+            width: 55%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .warning-item, .solution-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+        .warning-item .emoji, .solution-item .emoji {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            margin-top: 0.2rem;
+        }
+
+        .pain-point {
+            background: var(--second-bg-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .pain-point:hover {
+            transform: translateX(5px);
+        }
+
+        .pain-title {
+            font-weight: bold;
+            color: var(--main-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .image-placeholder {
+            background: #ddd;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            aspect-ratio: 16 / 9;
+            width: 100%;
+            border-radius: 8px;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonial {
+            background: var(--second-bg-color);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            position: relative;
+            border-left: 4px solid var(--main-color);
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            margin-top: 1rem;
+            text-align: right;
+            font-style: italic;
+            color: var(--main-color);
+        }
+
+        .cta-section {
+            background: var(--second-bg-color);
+            text-align: center;
+            padding: 3rem 0;
+            border-radius: 8px;
+            margin: 3rem 0;
+            border: 2px solid var(--main-color);
+        }
+
+        .cta-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--main-color);
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background: var(--main-color);
+            color: var(--bg-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(5, 163, 206, 0.4);
+        }
+
+        .blog-index {
+            background: var(--second-bg-color);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .blog-index h2 {
+            font-size: 1.4rem;
+            color: var(--main-color);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .blog-index ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .blog-index ul li a {
+            text-decoration: none;
+            color: var(--white-color);
+            background: var(--bg-color);
+            padding: 0.75rem 1rem;
+            border-radius: 5px;
+            display: block;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .blog-index ul li a:hover {
+            background: var(--main-color);
+            color: var(--bg-color);
+        }
+
+        .floating-btn {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: white;
+            color: #1f242d;
+            padding: 12px 20px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            animation: pulse 2s infinite;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            max-width: calc(100% - 60px);
+            width: auto;
+            border: 2px solid var(--main-color);
+            display: none;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .floating-btn img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+        }
+
+        .back-to-blogs {
+            display: inline-flex;
+            align-items: center;
+            color: var(--main-color);
+            font-size: 1.1rem;
+            margin-top: 3rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-blogs:hover {
+            color: var(--white-color);
+            transform: translateX(-5px);
+        }
+
+        .back-to-blogs::before {
+            content: "←";
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(5, 163, 206, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(5, 163, 206, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(5, 163, 206, 0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .two-columns {
+                flex-direction: column;
+            }
+            
+            .two-columns img {
+                width: 100%;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.7rem;
+            }
+            
+            .floating-btn {
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 20px;
+                padding: 8px 12px;
+                font-size: 0.85rem;
+                max-width: 90%;
+                white-space: normal;
+                text-align: center;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .floating-btn img {
+                width: 28px;
+                height: 28px;
+                margin-right: 8px;
+                margin-bottom: 0;
+            }
+            
+            .cta-section {
+                padding: 1.5rem;
+            }
+            
+            .cta-title {
+                font-size: 1.5rem;
+            }
+            
+            .whatsapp-btn {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <article>
+        <h1>¡Impactante! Negocios locales pierden hasta el <span style="color: var(--main-color)">70%</span> de sus ventas por no estar en Google</h1>
+        
+        <p><strong>Bogotá, 14 de Abril del 2025</strong> - Estás perdiendo ventas constantemente y no lo sabes. Descubre en este blog qué está pasando y cómo evitar que tus clientes terminen con la competencia.</p>
+        
+        <img src="../images/banner_blog.png" alt="Negocios perdiendo clientes por no estar en Google" class="header-img">
+
+        <!-- Índice del blog -->
+        <nav class="blog-index">
+            <h2>📌 <strong>Índice:</strong></h2>
+            <ul>
+                <li><a href="#pain1">1. Las personas que tienen el dinero terminan en otro negocio</a></li>
+                <li><a href="#pain2">2. Estás perdiendo ventas todos los días sin darte cuenta</a></li>
+                <li><a href="#pain3">3. Tu negocio parece menos confiable que otros, aunque seas mejor</a></li>
+                <li><a href="#pain4">4. Estás atrapado dependiendo solo del boca a boca y redes sociales</a></li>
+                <li><a href="#pain5">5. Los clientes terminan con alguien peor que tú</a></li>
+                <li><a href="#conclusion">💡 Conclusión: Deja de perder ventas ahora mismo</a></li>
+            </ul>
+        </nav>
+
+        <section id="pain1">
+            <div class="pain-point">
+                <div class="pain-title">1. Las personas que tienen el dinero en la mano para comprarte terminan en otro negocio</div>
+                <p>Piensa en cómo buscas servicios tú mismo. Cuando necesitas un dentista de urgencia, una pizzería para cenar, o un taller para arreglar tu coche, ¿qué haces? Sacas tu teléfono y buscas en Google.</p>
+                <p>Y cuando lo haces, no estás "navegando por internet" o "pasando el rato". Estás en modo "necesito resolver esto YA". Tienes el problema, tienes el presupuesto, y solo te falta encontrar quién te lo solucione.</p>
+                <p>Este tipo de búsquedas son oro puro para cualquier negocio porque:</p>
+                <ul>
+                    <li><strong>Son clientes con intención inmediata de compra.</strong> No están comparando precios ni investigando: están listos para gastar su dinero HOY.</li>
+                    <li><strong>Son clientes perfectamente calificados.</strong> Si buscan "peluquería canina en el poblado", es porque tienen un perro, viven cerca y necesitan ese servicio específico.</li>
+                    <li><strong>Son clientes de alto valor.</strong> Las personas que buscan soluciones inmediatas no suelen regatear tanto como las que tienen tiempo para comparar.</li>
+                </ul>
+                <p>Pero aquí está el problema que está destruyendo tu negocio en silencio: <strong>si no apareces entre los primeros resultados de Google, ese dinero termina en la caja registradora de tu competencia.</strong></p>
+            </div>
+            <div class="image-placeholder" style="background-image: url(../images/1.png);"></div>
+        </section>
+
+        <section id="pain2">
+            <div class="pain-point">
+                <div class="pain-title">2. Estás perdiendo ventas todos los días sin darte cuenta</div>
+                <p>Imagina esta situación: María acaba de mudarse a tu barrio. Su refrigerador deja de funcionar y necesita un técnico urgentemente. ¿Qué hace? Saca su teléfono y busca en Google "reparación refrigeradores cerca". Aparecen tres negocios. Ella llama al primero, agenda una visita para esa misma tarde, y resuelve su problema.</p>
+                <p>Pero tu negocio estaba a solo 5 minutos de la casa de María. Podrías haberla atendido más rápido y con mejor servicio. El problema es que apareciste en la quinta posición de los resultados, y María, como el 92% de los usuarios, nunca miró más allá de los tres primeros.</p>
+                <p>Esta historia se repite <strong>TODOS LOS DÍAS</strong>, cientos de veces, con diferentes clientes y diferentes necesidades. Y lo peor: nunca te enteras de estos clientes perdidos porque ellos tampoco saben que existes.</p>
+                <ul>
+                    <li>97% de las personas buscan negocios fisicos en internet</li>
+                    <li>70% hacen clic en los tres primeros resultados únicamente</li>
+                    <li>78% de las búsquedas en dispositivos móviles terminan en una compra el mismo día</li>
+                </ul>
+            </div>
+            <div class="image-placeholder" style="background-image: url(../images/2.png);"></div>
+        </section>
+    
+        <section id="pain3">
+            <div class="pain-point">
+                <div class="pain-title">3. Tu negocio parece menos confiable que otros, aunque seas mejor</div>
+                <p>Pongámonos en la piel de un cliente por un momento. Julia necesita contratar un electricista para su casa. Busca en Google y se encuentra con dos opciones:</p>
+                <ul>
+                    <li><strong>Electricista A:</strong> Aparece en primer lugar, tiene 47 reseñas (promedio 4.6 estrellas), fotos de trabajos realizados, ficha actualizada y responde mensajes.</li>
+                    <li><strong>Electricista B (Tú):</strong> Aparece en las últimas opciones, tiene 3 reseñas, sin fotos, información incompleta.</li>
+                </ul>
+                <p>¿A quién llamará Julia? La respuesta es obvia. Y esto sucede incluso si tú tienes 20 años más de experiencia, mejores precios y un servicio infinitamente superior.</p>
+                <p><strong>En la era digital, tu ausencia o mala presencia en Google se interpreta como falta de profesionalidad.</strong></p>
+            </div>
+            <div class="image-placeholder" style="background-image: url(../images/3.png);"></div>
+        </section>
+
+        <section id="pain4">
+            <div class="pain-point">
+                <div class="pain-title">4. Estás atrapado dependiendo solo del boca a boca y redes sociales</div>
+                <p>"Mi negocio funciona con recomendaciones de mis clientes satisfechos."</p>
+                <p>Esta frase, que escucho constantemente de dueños de negocios, esconde una trampa mortal. El boca a boca es valioso, pero tiene tres limitaciones críticas:</p>
+                <ol>
+                    <li><strong>Es lento y poco escalable.</strong> Depende de que tus clientes actuales conozcan a alguien que justo necesite tu servicio en ese momento.</li>
+                    <li><strong>Tiene alcance limitado.</strong> Tus clientes solo pueden recomendarte a su círculo cercano, que suele ser de 8-12 personas, mientras que Google te conecta con MILES de posibles clientes.</li>
+                    <li><strong>No captura la demanda inmediata.</strong> Cuando alguien necesita urgentemente una cerrajería a las 11 de la noche, no espera a preguntar recomendaciones a sus amigos al día siguiente.</li>
+                </ol>
+                <div class="testimonial">
+                    <p>Carlos, dueño de una tapicería en Medellín, experimentó esto en carne propia: "Durante años dependí solo de referidos. Cuando finalmente mejoré mi presencia en Google, mis ventas aumentaron un 70% en tres meses. Lo más sorprendente fue darme cuenta de cuántos clientes potenciales había estado perdiendo todo ese tiempo".</p>
+                    <p class="testimonial-author">- Carlos M., Tapicería Artesanal</p>
+                </div>
+            </div>
+            <div class="image-placeholder" style="background-image: url(../images/4.png);"></div>
+        </section>
+    
+        <section id="pain5">
+            <div class="pain-point">
+                <div class="pain-title">5. Los clientes que necesitan tu servicio terminan con alguien peor que tú</div>
+                <p>Esta es quizás la parte más dolorosa de toda esta situación. No solo estás perdiendo ventas y dinero; también estás permitiendo que clientes potenciales reciban productos o servicios inferiores de manos de tu competencia.</p>
+                <p>Piensalo un momento:</p>
+                <ul>
+                    <li>El pastelero que se conforma con ingredientes baratos mientras tú usas chocolate belga de primera calidad</li>
+                    <li>El taller mecánico que instala piezas usadas mientras tú ofreces garantía con repuestos originales</li>
+                    <li>La clínica veterinaria que apenas dedica 5 minutos a cada mascota mientras tú realizas chequeos completos</li>
+                </ul>
+                <p>Todos estos atienden a clientes que DEBERÍAN ser tuyos, solo porque están mejor posicionados en Google.</p>
+            </div>
+            <div class="image-placeholder" style="background-image: url(../images/5.png);"></div>
+        </section>
+    
+        <section id="conclusion">
+            <h2>Conclusión: Estás gastando tiempo y dinero en estrategias que no te traen resultados (VENTAS)</h2>
+            <p>Mientras inviertes en volantes o redes sociales que apenas generan "me gusta", hay personas buscando tu servicio en Google todos los días.</p>
+            <p>Si no apareces, tu competencia se lleva esas ventas. Así de simple.</p>
+            <p>Imagina que cada día, 50 personas buscan en Google el servicio que ofreces en tu zona. Si no apareces entre los primeros resultados, estás perdiendo potencialmente 1,500 clientes al mes. Si el valor promedio de cada cliente es de $200.000, estamos hablando de $300.000.000 en ventas perdidas al mes.</p>
+        </section>
+    
+        <div class="cta-section">
+            <h3 class="cta-title">¿Listo para dejar de perder clientes?</h3>
+            <p>Te ayudamos a que tu negocio aparezca en las primeras posiciones de Google Maps y atraer clientes listos para comprar.</p>
+            <a href="https://wa.link/g2jtf9" class="whatsapp-btn">
+                <i class="fab fa-whatsapp"></i> ¡QUIERO MÁS CLIENTES!
+            </a>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">Cuesta menos de lo que imaginas.</p>
+        </div>
+
+        <a href="../" class="back-to-blogs">Volver a los blogs</a>
+    </article>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mostrar botón flotante después de 7 segundos
+            setTimeout(function() {
+                var floatingBtn = document.querySelector('.floating-btn');
+                if(floatingBtn) {
+                    floatingBtn.style.display = 'flex';
+                }
+            }, 7000);
+
+            // Animación para los puntos de dolor
+            const painPoints = document.querySelectorAll('.pain-point');
+            painPoints.forEach((point, index) => {
+                point.style.transitionDelay = `${index * 0.1}s`;
+            });
+            
+            // Contador animado para las estadísticas
+            const statNumbers = document.querySelectorAll('.stat-number');
+            if(statNumbers.length > 0) {
+                const duration = 2000;
+                const startValues = [0, 0, 0, 0];
+                const endValues = [70, 90, 5, 200];
+                const prefixes = ['', '', '', ''];
+                const suffixes = ['%', '%', 'x', '%'];
+                
+                const animateCounters = () => {
+                    let startTime = null;
+                    
+                    const animation = (currentTime) => {
+                        if (!startTime) startTime = currentTime;
+                        const progress = Math.min((currentTime - startTime) / duration, 1);
+                        
+                        statNumbers.forEach((stat, index) => {
+                            const value = Math.floor(progress * (endValues[index] - startValues[index]) + startValues[index]);
+                            stat.textContent = prefixes[index] + value + suffixes[index];
+                        });
+                        
+                        if (progress < 1) {
+                            requestAnimationFrame(animation);
+                        }
+                    };
+                    
+                    requestAnimationFrame(animation);
+                };
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            animateCounters();
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                
+                observer.observe(document.querySelector('.stats-container'));
+            }
+        });
+    </script>
+</body>
+</html>
