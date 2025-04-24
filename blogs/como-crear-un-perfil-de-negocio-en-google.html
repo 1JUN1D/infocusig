@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="../landingpage/images/home.png">
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '465217403345219');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=465217403345219&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-39R85DJB88"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-39R85DJB88');
+    </script>
+
+    <title>Negocios locales pierden ventas por no estar en Google</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            font-family: "Poppins", sans-serif;
+        }
+
+        :root {
+            --bg-color: #1f242d;
+            --second-bg-color: #323946;
+            --main-color: #05a3ce;
+            --white-color: #fff;
+            --disabled-color: #fff3;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--white-color);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            color: var(--main-color);
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .header-img {
+            width: 100%;
+            height: auto;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .two-columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .two-columns > div {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .two-columns img {
+            width: 55%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .warning-item, .solution-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+        .warning-item .emoji, .solution-item .emoji {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            margin-top: 0.2rem;
+        }
+
+        .pain-point {
+            background: var(--second-bg-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .pain-point:hover {
+            transform: translateX(5px);
+        }
+
+        .pain-title {
+            font-weight: bold;
+            color: var(--main-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .image-placeholder {
+            background: #ddd;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            aspect-ratio: 9 / 16; /* ← FORMATO VERTICAL */
+            max-width: 360px;     /* ← Para que no se estire demasiado horizontalmente */
+            margin: 2rem auto;    /* ← Centra la imagen */
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        .testimonial {
+            background: var(--second-bg-color);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            position: relative;
+            border-left: 4px solid var(--main-color);
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            margin-top: 1rem;
+            text-align: right;
+            font-style: italic;
+            color: var(--main-color);
+        }
+
+        .cta-section {
+            background: var(--second-bg-color);
+            text-align: center;
+            padding: 3rem 0;
+            border-radius: 8px;
+            margin: 3rem 0;
+            border: 2px solid var(--main-color);
+        }
+
+        .cta-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--main-color);
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background: var(--main-color);
+            color: var(--bg-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(5, 163, 206, 0.4);
+        }
+
+        .blog-index {
+            background: var(--second-bg-color);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .blog-index h2 {
+            font-size: 1.4rem;
+            color: var(--main-color);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .blog-index ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .blog-index ul li a {
+            text-decoration: none;
+            color: var(--white-color);
+            background: var(--bg-color);
+            padding: 0.75rem 1rem;
+            border-radius: 5px;
+            display: block;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .blog-index ul li a:hover {
+            background: var(--main-color);
+            color: var(--bg-color);
+        }
+
+        .floating-btn {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: white;
+            color: #1f242d;
+            padding: 12px 20px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            animation: pulse 2s infinite;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            max-width: calc(100% - 60px);
+            width: auto;
+            border: 2px solid var(--main-color);
+            display: none;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .floating-btn img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+        }
+
+        .back-to-blogs {
+            display: inline-flex;
+            align-items: center;
+            color: var(--main-color);
+            font-size: 1.1rem;
+            margin-top: 3rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-blogs:hover {
+            color: var(--white-color);
+            transform: translateX(-5px);
+        }
+
+        .back-to-blogs::before {
+            content: "←";
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(5, 163, 206, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(5, 163, 206, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(5, 163, 206, 0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .two-columns {
+                flex-direction: column;
+            }
+            
+            .two-columns img {
+                width: 100%;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.7rem;
+            }
+            
+            .floating-btn {
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 20px;
+                padding: 8px 12px;
+                font-size: 0.85rem;
+                max-width: 90%;
+                white-space: normal;
+                text-align: center;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .floating-btn img {
+                width: 28px;
+                height: 28px;
+                margin-right: 8px;
+                margin-bottom: 0;
+            }
+            
+            .cta-section {
+                padding: 1.5rem;
+            }
+            
+            .cta-title {
+                font-size: 1.5rem;
+            }
+            
+            .whatsapp-btn {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <article>
+        <!-- Título principal -->
+        <h1>¿Cómo crear un perfil de negocio en Google y aparecer en Google Maps?</h1>
+        
+        <!-- Introducción -->
+        <p>Hoy en día, cuando una persona busca un restaurante, abogado, tienda de ropa o cerrajero, lo hace directamente en Google. Si tu negocio <strong>no aparece en GOOGLE</strong>, estás perdiendo ventas todos los días sin darte cuenta. Crear un perfil de negocio en Google no solo te hace visible, <strong>te convierte en una opción real para miles de personas que necesitan lo que tú ofreces</strong>.</p>
+        
+        <!-- Imagen de cabecera -->
+        <img src="../landingpage/images/banner_blog.png" alt="Perfil de negocio en Google Maps" class="header-img">
+
+        <!-- Índice del blog -->
+        <nav class="blog-index">
+            <h2>📌 <strong>Índice:</strong></h2>
+            <ul>
+                <li><a href="#importancia-google">1. ¿Por qué es tan importante tener tu negocio en Google?</a></li>
+                <li><a href="#perfil-complicado">2. Crear un perfil de negocio en Google parece fácil… pero no lo es</a></li>
+                <li><a href="#pasos">3. Los 5 pasos para crear tu negocio en Google y no quedar invisible</a></li>
+                <li><a href="#google-no-muestra">4. ¿Por qué Google no muestra tu negocio si ya creaste el perfil?</a></li>
+                <li><a href="#cta-gratis">5. ¿Quieres evitarte todos estos errores y aparecer entre los primeros?</a></li>
+                <li><a href="#revision-gratis">6. ¿Tu negocio ya aparece en Google? Lo revisamos GRATIS</a></li>
+                <li><a href="#conclusion">💡 Conclusión: Cada día que no apareces, estás perdiendo clientes</a></li>
+            </ul>
+        </nav>
+
+        <!-- Sección 1 -->
+        <section id="importancia-google">
+            <h2>¿Por qué es tan importante tener tu negocio en Google?</h2>
+            <p>Un perfil de negocio es lo que las personas ven cuando buscan algo como “Restaurante cerca”, “Tienda de ropa en mi zona” o “Cerrajero 24 horas”. Google les muestra una lista con <strong>los negocios más relevantes y mejor optimizados</strong>… ¿Tu negocio está ahí? Si no lo está, no existes (al menos para ellos).</p>
+            <div class="image-placeholder" style="background-image: url('../landingpage/images/1.png');"></div>
+        </section>
+
+        <!-- Sección 2 -->
+        <section id="perfil-complicado">
+            <h2>Crear un perfil de negocio en Google parece fácil… pero no lo es</h2>
+            <p>Aunque cualquiera puede crear su cuenta gratis en Google Business Profile, lo que <strong>la mayoría no sabe</strong> es que <strong>crear el perfil no garantiza que Google te recomiende</strong>. Tu perfil puede quedar escondido entre cientos si no lo configuras correctamente. <strong>Google premia a los negocios optimizados</strong>, no solo a los que existen.</p>
+            <div class="image-placeholder" style="background-image: url('../landingpage/images/2.png');"></div>
+        </section>
+
+        <!-- Sección 3 -->
+        <section id="pasos">
+            <h2>Los 5 pasos para crear tu negocio en Google y no quedar invisible</h2>
+
+            <h3>1. Crea tu cuenta en Google Business Profile</h3>
+            <p>Ingresa a <a href="https://www.google.com/business" target="_blank">google.com/business</a> y registra tu empresa. Agrega el nombre, dirección, número, categoría y una descripción con las palabras clave que tus clientes usarían para encontrarte.</p>
+
+            <h3>2. Verifica tu perfil (sin esto, no apareces)</h3>
+            <p>Google te pedirá que verifiques que ese negocio es tuyo. Puede ser por correo físico, llamada, email o video. Si no completas esta verificación, tu negocio <strong>no podrá aparecer en Google Maps</strong>.</p>
+
+            <h3>3. Sube fotos reales, actuales y profesionales</h3>
+            <p>Los perfiles con imágenes bien optimizadas reciben <strong>hasta 3 veces más clics</strong>. Agrega fotos del lugar, productos, personal, horarios o ejemplos de tu trabajo si eres prestador de servicios.</p>
+
+            <h3>4. Pide reseñas a tus primeros clientes</h3>
+            <p>Una cuenta sin reseñas parece abandonada. <strong>Las reseñas generan confianza inmediata</strong>. Google también toma en cuenta cuántas tienes para decidir si te muestra entre los primeros lugares.</p>
+
+            <h3>5. Optimiza tu perfil y mantenlo activo</h3>
+            <p>Agrega publicaciones, responde reseñas, activa tu chat y mantén la información actualizada. Esto le indica a Google que tu negocio está vivo y debe ser recomendado.</p>
+
+            <div class="image-placeholder" style="background-image: url('../landingpage/images/4.png');"></div>
+        </section>
+
+        <!-- Sección 4 -->
+        <section id="google-no-muestra">
+            <h2>¿Por qué Google no muestra tu negocio si ya creaste el perfil?</h2>
+            <p>Porque muchos crean el perfil y lo dejan a medias:</p>
+            <ul>
+                <li>No completan toda la información</li>
+                <li>No usan palabras clave relevantes</li>
+                <li>No eligen la categoría adecuada</li>
+                <li>No tienen reseñas ni fotos</li>
+                <li>No publican actualizaciones</li>
+            </ul>
+            <p>Por eso, tu competencia aparece y tú no, <strong>aunque tú seas mejor</strong>.</p>
+            <div class="image-placeholder" style="background-image: url('../landingpage/images/3.png');"></div>
+        </section>
+
+        <!-- Sección 5 -->
+        <section id="cta-gratis">
+            <h2>¿Quieres evitarte todos estos errores y aparecer entre los primeros?</h2>
+            <p>Nosotros te ayudamos a:</p>
+            <ul>
+                <li>Crear y optimizar tu perfil profesionalmente</li>
+                <li>Configurar tu ficha de Google Maps correctamente</li>
+                <li>Posicionar tu negocio en las primeras posiciones de búsqueda</li>
+            </ul>
+            <p>Y lo mejor: lo hacemos <strong>por menos de 50 USD</strong>.</p>
+            <div class="image-placeholder" style="background-image: url('../landingpage/images/5.png');"></div>
+        </section>
+
+        <!-- Sección 6 -->
+        <section id="revision-gratis">
+            <h2>¿Tu negocio ya aparece en Google? Lo revisamos GRATIS</h2>
+            <p>Escríbenos ahora, uno de nuestros expertos revisará gratis tu perfil actual y te dirá:</p>
+            <ul>
+                <li>✔️ Qué estás haciendo bien</li>
+                <li>❌ Qué te está afectando en tu posicionamiento</li>
+                <li>🔧 Qué puedes mejorar ya mismo</li>
+            </ul>
+        </section>
+
+        <!-- Conclusión -->
+        <section id="conclusion">
+            <h2>Conclusión: Cada día que no apareces, estás perdiendo clientes</h2>
+            <p>
+                Aparecer en Google ya no es opcional. Es una necesidad.
+                Si aún no tienes tu perfil o si lo tienes pero no sabes si está bien posicionado,
+                hoy es el momento de actuar. <strong>No pierdas más tiempo ni clientes</strong>.
+                Nosotros te ayudamos.
+            </p>
+        </section>
+
+        <!-- CTA Principal -->
+        <div class="cta-section">
+            <h3 class="cta-title">📲 ¡Quiero ser visible en Google!</h3>
+            <p>Escríbenos ahora y recibe tu diagnóstico GRATUITO.</p>
+            <!-- El id="finalCta" es imprescindible para el script -->
+            <a id="finalCta" href="#!" class="whatsapp-btn">
+                <i class="fab fa-whatsapp"></i> ¡QUIERO MI DIAGNÓSTICO!
+            </a>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">
+                La inversión es mínima y los beneficios son muy grandes. <br>
+                Escríbenos sin compromiso, <strong>nosotros te asesoramos.</strong>
+            </p>
+        </div>
+
+        <!-- Volver al listado de blogs -->
+        <a href="../" class="back-to-blogs">Volver a los blogs</a>
+    </article>
+
+    <script>
+        // CTA final - Redirección a WhatsApp
+        const finalCta = document.getElementById('finalCta');
+
+        finalCta.addEventListener('click', function() {
+            // Efecto visual inmediato
+            finalCta.textContent = '¡ABRIENDO WHATSAPP...!';
+            finalCta.style.backgroundColor = '#25D366';
+            
+            const phoneNumber = '+573126865031';
+            const message = `Hola, Quiero aparecer primero cuando me busquen en Google. ¿Cómo empiezo? 📍`;
+
+            // Detectar si es móvil
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i
+                              .test(navigator.userAgent);
+            
+            setTimeout(() => {
+                if (isMobile) {
+                    // Abrir directo en la app para móviles
+                    window.location.href =
+                        `whatsapp://send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+                } else {
+                    // Abrir en web para desktop
+                    window.open(
+                        `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`,
+                        '_blank'
+                    );
+                }
+            }, 800);
+        });
+    </script>
+</body>
+</html>
